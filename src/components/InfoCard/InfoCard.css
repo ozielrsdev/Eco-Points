@@ -1,0 +1,23 @@
+.infoCard{
+  background-color:#58B328 ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 23px;
+    padding: 27px 65px 78px;
+    gap: 20px;
+  }
+  .cardTitle{
+    font-family: Poppins, sans-serif; 
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .cardContent{
+    font-family: Poppins, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+  }

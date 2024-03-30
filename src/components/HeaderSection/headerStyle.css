@@ -88,7 +88,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   nav {
-    padding: 23px 23px 0px 23px;
+    padding: 23px 23px 0px;
   }
 
   .iconLogo {

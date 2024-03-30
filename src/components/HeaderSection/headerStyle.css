@@ -1,0 +1,119 @@
+.bg-Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url(../../assets/imgHeader.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.75rem 100px 0 100px;
+}
+
+ul {
+  gap: 9px;
+  list-style: none;
+  display: flex;
+}
+
+button {
+  width: 107px;
+  height: 34px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: Poppins;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.5s;
+  box-shadow: 0px 4px 6px black;
+}
+
+button:hover {
+  transform: scale(1.1) translateY(-3px);
+}
+
+.cardHeader {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 510px;
+  height: 297px;
+  background: rgba(246, 254, 172, 0.192);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  gap: 44px;
+  padding: 34px 58px;
+  animation: cardFloat 4s infinite;
+  text-align: center;
+  box-shadow: 0px 4px 21px black;
+}
+
+.cardHeaderTitle {
+  font-family: Roboto serif, sans-serif;
+  color: #f1f1f1;
+  font-weight: 600;
+}
+
+.cardHeaderText {
+  font-family: Noto serif, sans-serif;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 23px 23px 0px 23px;
+  }
+
+  .iconLogo {
+    width: 70px;
+  }
+
+  button {
+    width: 70px;
+    height: 25px;
+  }
+  .cardHeader {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@keyframes cardFloat {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-6px);
+  }
+}
+.efeito-flutuante-infinito {
+  animation: float 2s ease-in-out infinite;
+}

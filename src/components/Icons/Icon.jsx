@@ -52,7 +52,7 @@ function LogoIcon(props) {
         fill="#fff"
       />
     </svg>
-  )
+  );
 }
 
-export {LogoIcon}
+export { LogoIcon };

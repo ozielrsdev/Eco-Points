@@ -1,11 +1,11 @@
 import Button from "../Button/Button";
 import { LogoIcon } from "../Icons/Icon";
-import "./headerStyle.css"
+import "./headerStyle.css";
 
-export default function HeaderSection(){
-  return(
-      <div className="bg-Home">
-       <header>
+export default function HeaderSection() {
+  return (
+    <div className="bg-Home">
+      <header>
         <nav>
           <LogoIcon className="iconLogo" />
           <ul>
@@ -21,14 +21,14 @@ export default function HeaderSection(){
           </ul>
         </nav>
       </header>
-      
-        <div className="cardHeader">
-          <h1 className="cardHeaderTitle">FAÇA A DIFERENÇA</h1>
-          <h2 className="cardHeaderText">
-            Recicle mais, desperdice menos. Encontre pontos de coleta perto de
-            você!
-          </h2>
-        </div>
+
+      <div className="cardHeader">
+        <h1 className="cardHeaderTitle">FAÇA A DIFERENÇA</h1>
+        <h2 className="cardHeaderText">
+          Recicle mais, desperdice menos. Encontre pontos de coleta perto de
+          você!
+        </h2>
       </div>
-  )
+    </div>
+  );
 }

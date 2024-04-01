@@ -14,6 +14,7 @@ import "./InfoSection.css";
 
 export default function InfoSection() {
   return (
+    <>
     <section className="infoSection">
       <div className="infoTitle">
         <h1>Como reciclar?</h1>
@@ -59,5 +60,6 @@ export default function InfoSection() {
         </SwiperSlide>
       </Swiper>
     </section>
+    </>
   );
 }

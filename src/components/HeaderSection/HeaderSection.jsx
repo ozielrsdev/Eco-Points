@@ -4,6 +4,7 @@ import "./headerStyle.css";
 
 export default function HeaderSection() {
   return (
+    <>
     <div className="bg-Home">
       <header>
         <nav>
@@ -30,5 +31,6 @@ export default function HeaderSection() {
         </h2>
       </div>
     </div>
+    </>
   );
 }

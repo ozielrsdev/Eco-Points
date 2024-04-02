@@ -1,0 +1,98 @@
+.companySection {
+  width: 100%;
+  height: auto;
+  padding: 20% 100px 0px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.companyHeader {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-family: Roboto serif, sans-serif;
+  color: #1f714b;
+  width: auto;
+  height: auto;
+  font-weight: normal;
+  font-size: max(24px, 1.7vw);
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.searchInput {
+  border: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  padding-left: 46px;
+  font-size: 18px;
+  color: #1f714b;
+
+  background: url(../../assets/searchIcon.svg) no-repeat 10px/24px, #dddddd;
+  cursor: pointer;
+  transition-property: width, border-radius, box-shadow;
+  transition-duration: 300ms;
+}
+
+.searchInput::placeholder {
+  color: #aeaeae;
+  font-size: 15px;
+}
+
+.searchInput:focus {
+  width: 240px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px #1f714b;
+  outline: none;
+  cursor: auto;
+}
+
+.companyList {
+  width: 85%;
+  height: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .companySection {
+    padding: 40% 23px 0px;
+  }
+
+  .companyHeader {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .searchInput {
+    align-self: flex-start;
+  }
+
+  .searchInput:focus {
+    width: 100%;
+  }
+
+  .companyStates {
+    width: 100%;
+  }
+
+  .companyList {
+    width: 100%;
+  }
+}

@@ -16,9 +16,7 @@ export default function InfoSection() {
   return (
     <>
     <section className="infoSection">
-      <div className="infoTitle">
-        <h1>Como reciclar?</h1>
-      </div>
+        <h1 className="infoTitle">Como reciclar?</h1>
       <Swiper
         slidesPerView={1}
         effect={"coverflow"}

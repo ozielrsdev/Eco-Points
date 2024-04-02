@@ -1,0 +1,15 @@
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 3px;
+  background: rgb(0,191,67);
+background: linear-gradient(34deg, rgba(0,191,67,1) 0%, rgba(0,124,26,1) 22%, rgba(0,172,17,1) 51%, rgba(0,119,13,1) 80%, rgba(0,170,20,1) 100%);  
+}

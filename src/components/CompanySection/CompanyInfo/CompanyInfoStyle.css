@@ -1,0 +1,111 @@
+.companyContent {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-color: #1f714b;
+  display: flex;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+  font-size: max(10px, 1.3vw);
+
+}
+
+.companyImg {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.companyImg img {
+  width: clamp(30px, 50%, 70px);
+}
+
+
+
+.companyInfos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.companyInfoContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.companyName {
+  margin-right: 13%;
+  display: flex;
+  justify-content: center;
+}
+
+.companyAddressLeft {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+.companyAddressRight {
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.street,
+.municipality,
+.zip,
+.neighborhood,
+.state{
+  display: inline;
+  font-weight: bold;
+  color: #58b328;
+}
+.streetName,
+.municipalityName,
+.zipCode,
+.neighborhoodName,
+.stateName {
+  font-weight: normal;
+  color: #fff;
+  word-break: break-all;
+}
+
+@media screen and (max-width:768px){
+
+  .companyName{
+    margin: 0;
+  }
+
+  .companyContent{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .companyInfoContent{
+    flex-direction: column;
+  }
+
+  .companyAddressLeft, .companyAddressRight{
+    width: 100%;
+    justify-content: center;
+    padding: 0px 2px;
+    flex-wrap: wrap;
+  }
+
+  .companyImg{
+    width: 100%;
+    height: auto;
+  }
+}

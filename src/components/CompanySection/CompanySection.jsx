@@ -1,4 +1,4 @@
-import CompanyInfo from "../CompanyInfo/CompanyInfo";
+import CompanyInfo from "./CompanyInfo/CompanyInfo";
 import StatesSelectButton from "../StatesSelectButton/StatesSelectButton";
 import "./CompanyStyle.css";
 
@@ -10,14 +10,22 @@ export default function CompanySection() {
         <div className="companyHeader">
           <input
             type="search"
-            autoComplete="false"
+            autoComplete="off"
             className="searchInput"
             placeholder="Pesquisar por cidade"
             />
           <StatesSelectButton/>
         </div>
         <div className="companyList">
-        <CompanyInfo/>
+        <CompanyInfo companyImg
+        companyName="Campo Limpo"
+        street="Rua Sao joao"
+        neighborhood="Jardim das Oliveiras"
+        municipality="Goiania"
+        state="GO"
+        zipCode="1231551"
+        />
+ 
 
         </div>
       </section>

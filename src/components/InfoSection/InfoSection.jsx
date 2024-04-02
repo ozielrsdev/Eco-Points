@@ -1,4 +1,4 @@
-import InfoCard from "../InfoCard/InfoCard";
+import InfoCard from "./InfoCard/InfoCard"
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { register } from "swiper/element/bundle";

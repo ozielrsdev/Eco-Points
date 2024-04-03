@@ -1,15 +1,14 @@
 import { useState } from "react";
-import "./SelectButtonStyle.css"
+import "./SelectButtonStyle.css";
 
 export default function StatesSelectButton() {
+  const [state, setState] = useState("");
 
-  const [state, setState] = useState('');
-
-  const handleStateChange = (event) =>{
+  const handleStateChange = (event) => {
     setState(event.target.value);
-  }
+  };
 
-  console.log(state)
+  console.log(state);
 
   return (
     <select onChange={handleStateChange} className="brazilStates">

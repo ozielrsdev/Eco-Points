@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Navigation, Pagination } from "swiper/modules";
+import {Autoplay , Navigation, Pagination } from "swiper/modules";
 
 import "./InfoSection.css";
 
@@ -21,10 +21,17 @@ export default function InfoSection() {
         slidesPerView={1}
         effect={"coverflow"}
         loop={true}
+        autoplay={
+          {
+            delay: 10000,
+            disableOnInteraction:true
+          }
+        }
         grabCursor={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         pagination={true}
         navigation={{ clickable: true }}
+        
       >
         <SwiperSlide>
           <InfoCard

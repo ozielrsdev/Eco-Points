@@ -56,4 +56,4 @@ function LogoIcon(props) {
 }
 
 
-export { LogoIcon};
+export { LogoIcon };

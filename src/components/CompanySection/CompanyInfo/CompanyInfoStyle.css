@@ -18,7 +18,7 @@
   align-items: center;
 }
 .companyImg img {
-  width: clamp(30px, 50%, 70px);
+  width: clamp(30px, 50%, 80px);
 }
 
 

@@ -11,7 +11,7 @@ export default function CompanyInfo(props) {
         </div>
         <div className="companyInfos">
           <div className="companyName">
-          <h1>{props.companyName}</h1>
+          <h1>{props.name}</h1>
           </div>
         <div className="companyInfoContent">
           <div className="companyAddressLeft">
@@ -35,7 +35,7 @@ export default function CompanyInfo(props) {
 CompanyInfo.propTypes = {
   companyImg: PropTypes.string,
   street: PropTypes.string,
-  companyName: PropTypes.string,
+  name: PropTypes.string,
   municipality: PropTypes.string,
   zipCode: PropTypes.string,
   neighborhood: PropTypes.string,

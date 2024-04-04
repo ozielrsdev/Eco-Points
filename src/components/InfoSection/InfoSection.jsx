@@ -32,7 +32,6 @@ export default function InfoSection() {
         <Swiper
           slidesPerView={1}
           effect={"coverflow"}
-          loop={true}
           autoplay={{
             delay: 10000,
             disableOnInteraction: true,

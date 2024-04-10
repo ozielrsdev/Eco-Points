@@ -1,0 +1,39 @@
+.skeleton {
+  background-color: #c7c7c7;
+  margin: 0.75rem 0;
+  border-radius: 10px;
+}
+
+.companySkeleton{
+  width: 100%;
+  height: 100%;
+}
+.infoCardSkeleton{
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 100%;
+  height: 570px;
+  margin-bottom: 1rem;
+}
+.company {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/* Animation */
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

@@ -13,15 +13,21 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import "./InfoSection.css";
+import SkeletonInfo from "../skeletons/SkeletonInfoCard";
 
 export default function InfoSection() {
   // eslint-disable-next-line no-unused-vars
   const { getData } = useFetch();
   const [infos, setInfos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getData("https://ecopoints-api.onrender.com/api/infos").then((res) => {
+    setLoading(true)
+    getData("https://ecopoints-api.onrender.com/api/infos")
+    .then((res) => {
       setInfos(res.infos);
+    }).finally(()=>{
+      setLoading(false)
     });
   }, []);
 
@@ -40,15 +46,18 @@ export default function InfoSection() {
           modules={[Autoplay, Pagination, Navigation]}
           pagination={true}
           navigation={{ clickable: true }}
-        >
-          {infos.length > 0 && (
+          >
+          {loading ? (
+            <SkeletonInfo/>
+          ): infos.length > 0 && (
             infos.map((card) => {
               return (
                 <SwiperSlide key={card.id}>
                   <InfoCard title={card.title} content={card.content} />
                 </SwiperSlide>
               );
-            }))}
+            })) }
+          
         </Swiper>
       </section>
     </>

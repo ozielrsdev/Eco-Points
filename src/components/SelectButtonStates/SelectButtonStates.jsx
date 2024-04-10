@@ -1,18 +1,11 @@
-import { useState } from "react";
+
 import "./SelectButtonStyle.css";
 
-export default function StatesSelectButton() {
-  const [state, setState] = useState("");
-
-  const handleStateChange = (event) => {
-    setState(event.target.value);
-  };
-
-  console.log(state);
+export default function SelectButtonStates(props) {
 
   return (
-    <select onChange={handleStateChange} className="brazilStates">
-      <option value="">Selecione um Estado</option>
+    <select onChange={props.onChange} className="brazilStates">
+      <option value=" ">Selecione um Estado</option>
       <option value="AC">Acre</option>
       <option value="AL">Alagoas</option>
       <option value="AP">Amapá</option>

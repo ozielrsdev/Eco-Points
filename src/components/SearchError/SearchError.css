@@ -1,0 +1,12 @@
+.notFoundError{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+  color: #1f714b;
+}
+
+.notFoundError h2{
+
+}
